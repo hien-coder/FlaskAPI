@@ -1,0 +1,11 @@
+python -m venv <my env>
+pip install -r requirement.txt
+activate env: <env name>\Scripts\activate.bat
+
+pip freeze > requirement.txt
+pip install Flask==2.3.2
+pip install Flask-Cors==3.0.10
+pip install flask-marshmallow==0.15.0
+pip install Flask-SQLAlchemy==3.0.3
+pip install mysqlclient
+pip install python-dotenv
