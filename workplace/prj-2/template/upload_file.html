@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/main.css')}}">
+
+    {% block title %}
+    <title>Upload file</title>
+    {% endblock title %}
+    
+</head>
+<body>
+    {% block content %}
+    <div id="upload-file">
+        <h1>Upload file</h1>
+        
+        <form action="http://localhost:8000/upload-file" 
+            method="post" 
+            enctype = "multipart/form-data"
+        >
+            <input name="file" accept="image/*" type="file" />
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if pathfile %}
+            <img class="image-upload" src="{{pathfile}}"/>
+        {% endif %}
+
+    </div>
+    {% endblock content %}
+</body>
+</html>

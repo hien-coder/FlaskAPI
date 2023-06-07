@@ -1,0 +1,6 @@
+@import "./_user_list.css";
+@import "./_upload_file.css";
+
+h1 {
+    text-align: center;
+}

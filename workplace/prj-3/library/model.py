@@ -34,7 +34,6 @@ class Authors(db.Model):
         self.name = name
 
 class Books(db.Model):
-
     __tablename__= 'Books'
 
     id = db.Column(db.Integer, primary_key = True)
@@ -50,7 +49,6 @@ class Books(db.Model):
         self.category_id = category_id
 
 class Borrow(db.Model):
-
     __tablename__= 'Borrow'
 
     id = db.Column(db.Integer, primary_key = True)

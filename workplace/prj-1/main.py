@@ -1,10 +1,7 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app)
-
 app.config.from_pyfile("config.py")
 
 @app.route("/get-query-params", methods = ["GET"])

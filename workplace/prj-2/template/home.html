@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/main.css')}}">
+
+    
+    {% block title %}
+    <title>Home</title>
+    {% endblock title %}
+
+
+</head>
+<body>
+    {% block content %}
+    <br id="home-page">
+        <h1>Welcome to my app</h1>
+        <a href="{{url_for('users_view.users_list')}}">Users list</a> <br/>
+        <a href="{{url_for('upload_view.upload_file')}}">Upload file</a>
+    </div>
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,1 @@
+# Viết các hàm tiện ích
